@@ -41,4 +41,23 @@ getLength("abdullah");
 getLength([1,2,6,9,56,125,653,52])
 
 
+// problem-3
+
+class Person {
+    name: string;
+    age: number;
+    constructor(name:string, age:number){
+        this.name = name;
+        this.age = age;
+    }
+      getDetails(){
+        return `Name:${this.name}. Age: ${this.age}`
+    }
+}
+const person1 = new Person ('Md:Maruf', 45);
+
+person1.getDetails()
+
+
+// 
 
