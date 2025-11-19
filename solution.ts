@@ -24,3 +24,21 @@ else if( typeof any === "boolean"){
 
 formatValue(true);
 
+
+// problem-2
+
+const  getLength = (a : string | any[] )=> {if(typeof a === "string"){
+    const res1 = a.length;
+    console.log("this is string:",res1) 
+    return res1
+}
+else if(Array.isArray(a)){
+    const res2 = a.length
+    console.log("this is array:",res2)
+    return res2
+}}
+getLength("abdullah");
+getLength([1,2,6,9,56,125,653,52])
+
+
+
