@@ -59,5 +59,24 @@ const person1 = new Person ('Md:Maruf', 45);
 person1.getDetails()
 
 
-// 
+// problem-4
 
+type item = {
+    title: string,
+    rating: number
+}
+
+const filterByRating = (items : item[]) => {
+    const getTopItem = items.filter(product => product.rating >= 4)
+    
+    console.log(getTopItem)
+    return getTopItem;
+
+}
+const books = [
+  { title: 'Book A', rating: 4.5 },
+  { title: 'Book B', rating: 3.2 },
+  { title: 'Book C', rating: 5.0 },
+]
+
+filterByRating(books)
