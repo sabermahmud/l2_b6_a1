@@ -1,4 +1,4 @@
-// -1
+
 const formatValue = (any:string|number|boolean)=>{
 if(typeof any === "string"){
     const result = any.toUpperCase();
@@ -24,7 +24,7 @@ else if( typeof any === "boolean"){
 formatValue(true);
 
 
-// -2
+
 const  getLength = (a : string | any[] )=> {if(typeof a === "string"){
     const res1 = a.length;
     console.log("this is string:",res1) 
@@ -39,7 +39,7 @@ getLength("abdullah");
 getLength([1,2,6,9,56,125,653,52])
 
 
-// -3
+
 class Person {
     name: string;
     age: number;
@@ -55,7 +55,7 @@ const person1 = new Person ('Md:Maruf', 45);
 person1.getDetails()
 
 
-// -4
+
 type item = {
     title: string,
     rating: number
@@ -73,7 +73,7 @@ const books = [
 filterByRating(books)
 
 
-// -5 
+
 type user = {
     id: number,
     name: string,
@@ -93,7 +93,7 @@ const user1 = {
 filterActiveUsers([user1]);
 
 
-//-6
+
 
 type Book ={
     title: string
@@ -118,7 +118,7 @@ const book1: Book = {
 printBookDetails(book1);
 
 
-//-7
+
 
 function getUniqueValues(arr1: (string | number)[], arr2: (string | number)[]): (string | number)[] {
     const result: (string | number)[] = [];
@@ -147,7 +147,7 @@ const array2 = [3, 4, 5, 6, 7];
 getUniqueValues(array1, array2);
 
 
-// -8
+
 type Product = {
     name: string
     price: number
